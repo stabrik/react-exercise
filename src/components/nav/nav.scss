@@ -1,0 +1,51 @@
+$bg-nav: rgb(95,55,47);
+$color-text: rgb(198,171,164);
+$color-text-active: rgb(40,130,90);
+$color-light: #FFFFFF;
+$btn-toggler: #00A671;
+$font: 'Lato', sans-serif;
+
+.navbar{
+    background-color: $bg-nav;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    font-family: $font;
+
+    &-toggler{
+        background-color: $btn-toggler;
+        margin-left: auto;
+        border-radius: 0;
+
+        .fa-angle-down{
+            color: $color-light;
+        }
+    }
+
+    &-collapse{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .nav-item{
+        &.active{
+            
+            .nav-link{
+                color:$color-text-active;
+
+                    &:hover{
+                        color: lighten($color-text-active,20%);
+                         }
+            }
+        }
+        .nav-link{
+            color:$color-text;
+
+            &:hover{
+                color: lighten($color-text, 20%);
+                         
+                     }
+            }
+     }
+}
+}
