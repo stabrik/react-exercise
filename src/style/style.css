@@ -10,6 +10,8 @@
     border-radius: 0; }
     .navbar-toggler .fa-angle-down {
       color: #FFFFFF; }
+    .navbar-toggler:focus {
+      outline: none; }
   .navbar-collapse {
     display: flex;
     justify-content: center;
@@ -22,3 +24,8 @@
       color: #c6aba4; }
       .navbar-collapse .nav-item .nav-link:hover {
         color: #ede5e3; }
+
+.carousel-control-next, .carousel-control-prev {
+  width: 5%;
+  align-items: flex-end;
+  bottom: 15px; }

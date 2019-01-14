@@ -20,6 +20,9 @@ $font: 'Lato', sans-serif;
         .fa-angle-down{
             color: $color-light;
         }
+        &:focus{
+            outline: none;
+        }
     }
 
     &-collapse{
